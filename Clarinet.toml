@@ -1,12 +1,12 @@
 [project]
-name = 'lottery'
+name = 'GreenStx'
 description = ''
 authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
-[contracts.lottery]
-path = 'contracts/lottery.clar'
+[contracts.GreenStx]
+path = 'contracts/GreenStx.clar'
 clarity_version = 3
 epoch = 3.1
 [repl.analysis]
