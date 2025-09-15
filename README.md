@@ -1,15 +1,20 @@
-# lottery
-# 🎟️ STX Lottery (Raffle Draw)
+# 🌍 GreenStx – Eco Pledge Contract 
 
-An on-chain **raffle system** where players buy tickets with STX,  
-and the contract owner can **draw a random winner** to win the pot.
+GreenStx is a **unique, positive-impact smart contract** built on Stacks.  
+It allows anyone to **pledge STX** to support eco-friendly initiatives like tree planting, cleanups, and sustainability projects.  
 
-## Features
-- Fair & simple: all players have equal chance
-- Ticket price set at 1 STX
-- Fully on-chain lottery with payout
+---
 
-## Usage
+## ✨ Features
+- 🌱 **Pledge STX** into a transparent eco-fund  
+- 📊 **Track total pledged** and individual contributions  
+- 🔑 **Owner can manage funds** responsibly  
+- 🌍 **Eco-friendly branding** that stands out in hackathons & raffles  
 
-### Enter the Lottery
- 
+---
+
+## 🚀 Example Usage
+
+### 1. Pledge STX
+```clarity
+(contract-call? .greenstx pledge u100)
