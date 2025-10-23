@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTakTok Coin</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="https://unpkg.com/@stacks/connect@latest/dist/connect.min.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🟢 TikTakTok Coin (TTTC)</h1>
+    <button id="connect">Connect Wallet</button>
+    <div id="whoami"></div>
+  </header>
+
+  <main>
+    <section class="panel game">
+      <h2>Play Tic‑Tac‑Toe</h2>
+      <div id="board" class="board"></div>
+      <div id="game-status" class="status"></div>
+      <button id="reset">Reset</button>
+    </section>
+
+    <section class="panel balances">
+      <h2>Your Balances</h2>
+      <div>Points: <span id="points">-</span></div>
+      <div>TTTC: <span id="tttc">-</span></div>
+      <div>LP Shares: <span id="lp">-</span></div>
+      <div class="actions">
+        <input id="convert-input" type="number" min="1000" step="1000" placeholder="Points to convert (1000:1)" />
+        <button id="convert-btn">Convert Points</button>
+      </div>
+      <div class="actions">
+        <input id="deposit-input" type="number" min="1" step="1" placeholder="Deposit TTTC" />
+        <button id="deposit-btn">Deposit</button>
+      </div>
+      <div class="actions">
+        <input id="withdraw-input" type="number" min="1" step="1" placeholder="Withdraw TTTC" />
+        <button id="withdraw-btn">Withdraw</button>
+      </div>
+    </section>
+
+    <section class="panel operator">
+      <h2>Operator Tools</h2>
+      <p>Only the operator can award points on-chain.</p>
+      <input id="op-player" placeholder="Player principal (SP...)" />
+      <input id="op-points" type="number" min="1" step="1" placeholder="Points" />
+      <button id="op-award">Award Points</button>
+      <div id="op-status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Contract: <code id="contract-id"></code></small>
+  </footer>
+</body>
+</html>

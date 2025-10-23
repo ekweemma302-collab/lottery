@@ -1,0 +1,9 @@
+{
+  "name": "js-tttc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "index.ts",
+  "description": "JavaScript utilities for TikTakTok Coin: conversions and game helpers.",
+  "license": "MIT"
+}
